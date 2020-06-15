@@ -1,9 +1,7 @@
- function 	openSideBar(){
- 	//create aside
- 	alert('my aside bar!!!');
- 	let aside = document.createElement('aside');
- 	let text = document.createText('This is aside bar');
+let menuBlock = document.querySelectorAll('.menu');
+let hideMenu = document.querySelectorAll('.hide-menu');
+let showMenu = document.querySelectorAll('.show-menu');
 
- 	aside.appendChild(text);
- 	
- }
+showMenu.addEventListener('click', ()=>{
+	menuBlock.style.display = 'block';
+});
